@@ -1,0 +1,421 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header styles */
+header {
+    background-color: #EAC926;
+    padding: 20px;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+
+#logo {
+    width: 25%;
+}
+
+header #formBusqueda{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 14px;
+    width: 30%;
+    height: 20px;
+}
+
+
+header #formBusqueda #input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px; 
+    height: 20px;
+     }
+     
+
+#lupa {
+    background-color: #ebebeb;
+    color: black;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 14px;
+
+}
+
+#comentCompra {
+    text-align: right;
+    font-weight: 400;
+    max-width: 350px;
+    font-size: 12px;
+    width: 25%;
+
+}
+
+.header1 {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5%;
+    text-align: center;
+   }
+
+.header2 nav {
+    font-size: 12px;
+    margin-left: 20px;
+}   
+
+.header2 {
+    display:flex;
+    justify-content: space-between;
+}
+
+.header2 ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.header2 a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: #ebebeb;
+    display:block;
+    margin:auto;
+    padding: 10px;
+    max-width: 45px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#banner {
+    width: 100%;
+}
+
+/* Body styles */
+
+main{
+    background-color: #ebebeb;
+    width: 100vw;
+    padding: 20px;
+}
+
+.ultimaVisita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:250px;
+}
+
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    margin-bottom: 10px;
+    position:relative;
+    transition: all 450ms;
+}
+
+#titulares {
+    font-size: 24px;
+    color:#666
+}
+
+#cajaArticulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    transition: all 450ms;
+
+}
+
+
+main section article img{
+    width: 100%;
+}
+
+main section article i {
+  display:block;
+  font-size: 20px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border: #39b54a solid 1px;
+  background-color: #FFF;
+  border-radius: 25px;
+  color: #39b54a;
+  text-align: center;
+  position:absolute;
+  right: 10%;
+  top:-15px;
+  transition: all 450ms;
+}
+
+#precios {
+    font-size: 18px;
+    display: inline;
+    width: 30%;
+    
+}
+
+
+#descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    display: inline;
+    width: 70%;
+}
+
+#descripciones {
+    font-size: 16px;
+    color: #666;
+    display:none;
+    /* transition: all 1s; */
+    
+}
+
+article:hover #descripciones{
+        display: block;
+}
+
+article:hover #cajaArticulo{ 
+  box-shadow: 10px 10px 30px rgb(51, 51, 51);
+}
+
+article:hover i {
+    transform: rotate(-90deg);
+}
+
+/* Footer Styles */
+
+.footerParte1 {
+    text-align: center;
+}
+
+#iconoFooter {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 450ms;
+}
+
+#iconoFooter:hover {
+    color: #39b54a;
+}
+
+#tituloFooter {
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+}
+
+#descriFooter {
+    font-size: 12px;
+    color: #666;
+}
+
+/* REGISTRO */
+
+.register {
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.register input{
+   margin-top: 10px;
+}
+
+.register form h4 {
+    margin-top: 10px;
+}
+
+.perfilUsuario {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.perfilUsuario input {
+    width: 50%;
+    
+}
+
+.perfilUsuario label {
+    width: 50%;
+    font-size: 12px;
+}
+
+
+.catDeInteres{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.catDeInteres input {
+    width: 20%;
+}
+
+.catDeInteres label {
+    width: 25%;
+    font-size: 12px;
+}
+
+.radio {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#buttonRegister {
+    display: flex;
+    justify-content: right;
+}
+
+#buttonR {
+    width: 25%;
+}
+
+
+/* LOGGIN */
+
+.login {
+    margin-top: 240px;
+}
+
+.login h3{
+    margin-top: 10px;
+}
+
+.login input {
+    width: 50%;
+}
+
+.botonLogin {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: all 450ms;
+}
+
+.botonLogin:hover {
+ background-color: #0022AA;
+ color: white
+}
+
+/* Navegación Celu */
+@media (max-width: 360.9px) {
+    #descripciones {
+        display: none;
+     }
+
+     nav {
+        display: none;
+     }
+
+     #logo {
+        width: 50%;
+    }
+    
+    header #formBusqueda{
+        width: 50%;
+    }
+
+    #comentCompra {
+        text-align: center;
+        font-weight: 400;
+        max-width: 350px;
+        font-size: 12px;
+        width: 100%;
+    
+    }
+
+ }
+/* Navegación en tablets */
+@media (min-width: 361px) {
+   article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+    justify-content: space-between;
+   }
+
+   .burger-menu{
+    display: none;
+   }
+
+   .ultimaVisita {
+    margin-top:340px;
+   }
+
+   .register {
+    margin-top: 330px;
+}
+
+.login {
+    margin-top: 300px;
+}
+
+
+}
+
+/* Navegación en desktop */
+@media (min-width: 769px) {
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22%;
+        justify-content: space-between;
+       }
+    .burger-menu{
+        display: none;
+       }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .footerParte1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ultimaVisita {
+        margin-top:400px;
+       }
+
+    .register {
+        margin-top: 360px;
+    }
+
+    .login {
+        margin-top: 350px;
+    }
+
+}
