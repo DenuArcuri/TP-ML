@@ -14,10 +14,11 @@ header {
     position:fixed;
     top:0;
     z-index:100;
+    
 }
 
 #logo {
-    width: 25%;
+    width: 20%;
 }
 
 header #formBusqueda{
@@ -109,9 +110,17 @@ header #formBusqueda #input{
 
 #banner {
     width: 100%;
+    margin-top:200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Body styles */
+
+body {
+    background-color: #EAC926;
+}
 
 main{
     background-color: #ebebeb;
@@ -123,7 +132,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top:250px;
 }
 
 .ofertas {
@@ -244,7 +252,7 @@ article:hover i {
 /* REGISTRO */
 
 .register {
-    margin-top: 250px;
+    /* margin-top: 250px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -307,9 +315,9 @@ article:hover i {
 
 /* LOGGIN */
 
-.login {
+/* .login {
     margin-top: 240px;
-}
+} */
 
 .login h3{
     margin-top: 10px;
@@ -371,17 +379,17 @@ article:hover i {
     display: none;
    }
 
-   .ultimaVisita {
-    margin-top:340px;
+   #banner {
+    margin-top:200px;
    }
 
-   .register {
+   /* .register {
     margin-top: 330px;
 }
 
 .login {
     margin-top: 300px;
-}
+} */
 
 
 }
@@ -406,16 +414,16 @@ article:hover i {
         justify-content: space-around;
     }
 
-    .ultimaVisita {
-        margin-top:400px;
+    #banner {
+        margin-top:290px;
        }
 
-    .register {
+    /* .register {
         margin-top: 360px;
     }
 
     .login {
         margin-top: 350px;
-    }
+    } */
 
 }
